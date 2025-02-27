@@ -1,0 +1,90 @@
+<LinearLayout android:layout_height="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="100dp">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/imagecapture"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="50dp"
+        android:elevation="2dp"
+        android:text="@string/take_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/vertical_centerline" />
+
+    <Button
+        android:id="@+id/burst_capture_button"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="50dp"
+        android:elevation="2dp"
+        android:text="Start Burst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertical_centerline" />
+
+    <EditText
+        android:id="@+id/minutesDuration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter minutes"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@color/white"/>
+    <!--    &lt;!&ndash; ISO Input Field &ndash;&gt;-->
+    <!--    <EditText-->
+    <!--        android:id="@+id/iso_input"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="Enter ISO Value"-->
+    <!--        android:inputType="number"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:padding="12dp"/>-->
+
+    <!-- Exposure Time Input Field -->
+    <!--    <EditText-->
+    <!--        android:id="@+id/exposure_time_input"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="Enter Exposure Time (ms)"-->
+    <!--        android:inputType="number"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/iso_input"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:padding="12dp"/>-->
+    <EditText
+        android:id="@+id/photosPerMinute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter photos per minute"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/minutesDuration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:background="@color/white"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_centerline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".50" />
+</LinearLayout>

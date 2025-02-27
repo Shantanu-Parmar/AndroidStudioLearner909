@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CameraXApp</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="start_capture">Start Capture</string>
+    <string name="stop_capture">Stop Capture</string>
+    <string name="flash">flash</string>
+    <string name="burst_mode">Burst Mode</string>
+    <string name="wb_settings">WB</string>
+    <string name="focus">Focus</string>
+    <string name="exposure_control">Exposure</string>
+    <string name="set_lowest_exposure">Set Lowest Exposure</string>
+    <string name="enter_minutes">Enter minutes</string>
+    <string name="enter_photos_per_minute">Enter photos per minute</string>
+
+
+</resources>

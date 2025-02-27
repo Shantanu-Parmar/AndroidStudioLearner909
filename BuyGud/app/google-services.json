@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "109244172528",
+    "project_id": "buygud-c0cc1",
+    "storage_bucket": "buygud-c0cc1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109244172528:android:0e1659591edaca4c641a35",
+        "android_client_info": {
+          "package_name": "com.buygud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKhecU65igztYUnKzEVqWoXB1Mh2N7XUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

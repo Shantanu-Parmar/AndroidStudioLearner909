@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CameraCapture</string>
+    <string name="accessibility_service_description">Camera capture service</string>
+</resources>
